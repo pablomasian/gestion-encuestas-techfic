@@ -1,0 +1,64 @@
+# PRUEBAS - Comandos para ejecutar la aplicación cliente
+# IMPORTANTE: Antes de ejecutar estos comandos, iniciar el servicio con:
+# cd ws-app-service && mvn jetty:run
+# Todos los comandos mvn se ejecutan desde el directorio ws-app-client
+
+GUIA DE Comandos
+
+[N]    AppServiceClient -N <pregunta> <endDateTime>\n"  <-- CREAR UNA ENCUESTA
+[K]    AppServiceClient -K <keyword>\n"  <-- BUSCAR POR PALABRA CLAVE (LISTAR ENCUESTAS)
+[B]    AppServiceClient -B <encuestaId>\n"  <-- BUSCAR POR ID
+[R]    AppServiceClient -R <encuestaId> <email> <positiva|negativa>\n"  <-- RESPONDER ENCUESTA
+[C]    AppServiceClient -C <encuestaId>\n"  <-- CANCELAR ENCUESTA
+[P]    AppServiceClient -P <encuestaId> <true|false>\n";  <-- LISTAR PREGUNTAS
+
+
+--------------------------------------------------------------------------------
+# 1. Añadir encuesta
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-N 'Usas el servicio de comedor?' '2026-08-01T00:00'"
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-N 'Son útiles los cursos de formación?' '2026-09-01T00:00'"
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-N 'Usas el servicio de biblioteca?' '2026-12-01T00:00'"
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-N 'Vas a asistir a la cena de Navidad?' '2026-12-01T00:00'"
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-N ' ' '2026-10-01T21:00'"
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-N 'Estás satisfecho con tu trabajo?' '2025-08-01T21:00'"
+
+# 2. Responder a una encuesta
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-R 1 user1@udc.es positiva"
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-R 1 user2@udc.es negativa"
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-R 3 user1@udc.es negativa"
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-R 3 user3@udc.es positiva"
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-R 3 user3@udc.es negativa"
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-R 9 user1@udc.es positiva"
+
+# 3. Sentencia SQL para establecer fecha pasada en encuesta 2
+# Ejecutar: mysql -u ws -pws ws
+# UPDATE Encuesta SET fechaHoraFin='2025-09-01 00:00' WHERE encuestaId=2;
+
+# 4. Responder a una encuesta con fecha de finalización pasada
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-R 2 user1@udc.es positiva"
+
+# 5. Cancelar una encuesta
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-C 4"
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-C 4"
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-C 2"
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-C 9"
+
+# 6. Responder a una encuesta cancelada
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-R 4 user4@udc.es positiva"
+
+# 7. Buscar encuestas por palabra clave
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-K servicio"
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-K cena"
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-K ' '"
+
+# 8. Buscar encuesta por identificador
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-B 2"
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-B 9"
+
+# 9. Buscar respuestas a una encuesta
+# Comando: -P <encuesaId> <soloPositivas>
+# soloPositivas: true (solo positivas) o false (todas)
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-P 1 false"
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-P 1 true"
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-P 3 false"
+mvn exec:java -Dexec.mainClass="es.udc.ws.app.client.ui.AppServiceClient" -Dexec.args="-P 9 false"

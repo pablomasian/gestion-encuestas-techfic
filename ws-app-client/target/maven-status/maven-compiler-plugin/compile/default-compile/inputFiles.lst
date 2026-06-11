@@ -1,0 +1,13 @@
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-client\src\main\java\es\udc\ws\app\client\service\ClientEncuestaService.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-client\src\main\java\es\udc\ws\app\client\service\ClientEncuestaServiceFactory.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-client\src\main\java\es\udc\ws\app\client\service\dto\ClientEncuestaDto.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-client\src\main\java\es\udc\ws\app\client\service\dto\ClientRespuestaEncuestaDto.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-client\src\main\java\es\udc\ws\app\client\service\exceptions\ClientEncuestaCanceladaException.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-client\src\main\java\es\udc\ws\app\client\service\exceptions\ClientEncuestaFinalizadaException.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-client\src\main\java\es\udc\ws\app\client\service\rest\json\JsonToClientEncuestaDtoConversor.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-client\src\main\java\es\udc\ws\app\client\service\rest\json\JsonToClientExceptionConversor.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-client\src\main\java\es\udc\ws\app\client\service\rest\json\JsonToClientRespuestaEncuestaDtoConversor.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-client\src\main\java\es\udc\ws\app\client\service\rest\RestClientEncuestaService.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-client\src\main\java\es\udc\ws\app\client\service\thrift\ClientEncuestaDtoToThriftEncuestaDtoConversor.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-client\src\main\java\es\udc\ws\app\client\service\thrift\ThriftClientEncuestaService.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-client\src\main\java\es\udc\ws\app\client\ui\AppServiceClient.java

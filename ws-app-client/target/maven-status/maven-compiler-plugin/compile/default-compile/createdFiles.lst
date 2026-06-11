@@ -1,0 +1,13 @@
+es\udc\ws\app\client\service\dto\ClientEncuestaDto.class
+es\udc\ws\app\client\service\ClientEncuestaService.class
+es\udc\ws\app\client\service\thrift\ClientEncuestaDtoToThriftEncuestaDtoConversor.class
+es\udc\ws\app\client\service\exceptions\ClientEncuestaCanceladaException.class
+es\udc\ws\app\client\service\exceptions\ClientEncuestaFinalizadaException.class
+es\udc\ws\app\client\ui\AppServiceClient.class
+es\udc\ws\app\client\service\rest\RestClientEncuestaService.class
+es\udc\ws\app\client\service\rest\json\JsonToClientRespuestaEncuestaDtoConversor.class
+es\udc\ws\app\client\service\ClientEncuestaServiceFactory.class
+es\udc\ws\app\client\service\rest\json\JsonToClientEncuestaDtoConversor.class
+es\udc\ws\app\client\service\dto\ClientRespuestaEncuestaDto.class
+es\udc\ws\app\client\service\rest\json\JsonToClientExceptionConversor.class
+es\udc\ws\app\client\service\thrift\ThriftClientEncuestaService.class
