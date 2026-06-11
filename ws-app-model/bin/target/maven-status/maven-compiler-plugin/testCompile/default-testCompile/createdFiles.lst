@@ -1,0 +1,6 @@
+es\udc\ws\app\test\model\appservice\ExcepcionFinalizadaTest.class
+es\udc\ws\app\test\model\appservice\EncuestaServicioTest.class
+es\udc\ws\app\test\model\DataAccessRuntimeExceptionTest.class
+es\udc\ws\app\test\model\appservice\EncuestaTest.class
+es\udc\ws\app\test\model\appservice\ExcepcionCanceladaTest.class
+es\udc\ws\app\test\model\appservice\RespuestaEncuestaTest.class
