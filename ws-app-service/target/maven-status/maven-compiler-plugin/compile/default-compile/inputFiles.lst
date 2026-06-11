@@ -1,0 +1,12 @@
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-service\src\main\java\es\udc\ws\app\restservice\dto\EncuestaToRestEncuestaDtoConversor.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-service\src\main\java\es\udc\ws\app\restservice\dto\RespuestaEncuestaToRestRespuestaEncuestaDtoConversor.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-service\src\main\java\es\udc\ws\app\restservice\dto\RestEncuestaDto.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-service\src\main\java\es\udc\ws\app\restservice\dto\RestRespuestaEncuestaDto.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-service\src\main\java\es\udc\ws\app\restservice\json\AppExceptionToJsonConversor.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-service\src\main\java\es\udc\ws\app\restservice\json\JsonToRestEncuestaDtoConversor.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-service\src\main\java\es\udc\ws\app\restservice\json\JsonToRestRespuestaEncuestaDtoConversor.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-service\src\main\java\es\udc\ws\app\restservice\servlets\EncuestaServlet.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-service\src\main\java\es\udc\ws\app\restservice\servlets\RespuestaEncuestaServlet.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-service\src\main\java\es\udc\ws\app\thriftservice\EncuestaToThriftEncuestaDtoConversor.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-service\src\main\java\es\udc\ws\app\thriftservice\ThriftEncuestaServiceImpl.java
+C:\Users\pablo\Documents\FIC\Tercero\Cuatri 1\ISD\isd-019\ws-app-service\src\main\java\es\udc\ws\app\thriftservice\ThriftEncuestaServiceServlet.java

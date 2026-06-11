@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+
+    <distributable/>
+
+    <display-name>WS Encuestas Service</display-name>
+
+    <!-- REST service -->
+
+    <servlet>
+        <display-name>EncuestaServlet</display-name>
+        <servlet-name>EncuestaServlet</servlet-name>
+        <servlet-class>
+            es.udc.ws.app.restservice.servlets.EncuestaServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet>
+        <display-name>RespuestaEncuestaServlet</display-name>
+        <servlet-name>RespuestaEncuestaServlet</servlet-name>
+        <servlet-class>
+            es.udc.ws.app.restservice.servlets.RespuestaEncuestaServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>EncuestaServlet</servlet-name>
+        <url-pattern>/encuestas/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>RespuestaEncuestaServlet</servlet-name>
+        <url-pattern>/respuestas/*</url-pattern>
+    </servlet-mapping>
+
+   <!-- Thrift service -->
+    <servlet>
+        <servlet-name>ThriftEncuestaServiceServlet</servlet-name>
+        <servlet-class>es.udc.ws.app.thriftservice.ThriftEncuestaServiceServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ThriftEncuestaServiceServlet</servlet-name>
+        <url-pattern>/thrift/encuestaservice</url-pattern>
+    </servlet-mapping>
+
+    <!-- General configuration -->
+
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+</web-app>

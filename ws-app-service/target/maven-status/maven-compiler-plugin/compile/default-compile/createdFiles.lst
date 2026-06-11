@@ -1,0 +1,12 @@
+es\udc\ws\app\restservice\dto\RestRespuestaEncuestaDto.class
+es\udc\ws\app\restservice\json\AppExceptionToJsonConversor.class
+es\udc\ws\app\restservice\dto\RestEncuestaDto.class
+es\udc\ws\app\thriftservice\EncuestaToThriftEncuestaDtoConversor.class
+es\udc\ws\app\thriftservice\ThriftEncuestaServiceServlet.class
+es\udc\ws\app\restservice\json\JsonToRestRespuestaEncuestaDtoConversor.class
+es\udc\ws\app\restservice\dto\EncuestaToRestEncuestaDtoConversor.class
+es\udc\ws\app\restservice\dto\RespuestaEncuestaToRestRespuestaEncuestaDtoConversor.class
+es\udc\ws\app\restservice\servlets\EncuestaServlet.class
+es\udc\ws\app\restservice\json\JsonToRestEncuestaDtoConversor.class
+es\udc\ws\app\restservice\servlets\RespuestaEncuestaServlet.class
+es\udc\ws\app\thriftservice\ThriftEncuestaServiceImpl.class
